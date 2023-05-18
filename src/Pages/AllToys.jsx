@@ -2,6 +2,9 @@ import React, { useEffect, useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import banner2 from '../assets/images/Banner/2.jpg'
 import AllToy from './allToy/AllToy';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+AOS.init();
 
 const AllToys = () => {
     const [allToys, setAllToys] = useState([]);
@@ -17,10 +20,10 @@ const AllToys = () => {
 
     }, [])
     return (
-        <div>
+        <>
 
-            <div id="slide1" className="carousel-item relative w-full ">
-                <img src={banner2} className="w-full h-[300px]" />
+            <div id="slide1" className="carousel-item relative w-full my-9 " data-aos="fade-left " data-aos-duration="2000">
+                <img src={banner2} className="w-full h-[300px]  rounded-xl" />
 
 
             </div>
@@ -48,7 +51,7 @@ const AllToys = () => {
                 }
             </div>
 
-        </div>
+        </>
     );
 };
 
