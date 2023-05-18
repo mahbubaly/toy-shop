@@ -1,15 +1,21 @@
 import React, { useState } from 'react';
+import Banner from './Banner';
+
 
 
 const Home = () => {
-    
 
-    
+
+
 
     return (
         <>
+            <Banner />
 
-            
+
+
+
+
 
         </>
     );

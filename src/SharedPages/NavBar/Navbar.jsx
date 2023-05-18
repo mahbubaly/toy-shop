@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { XMarkIcon, Bars4Icon, PhoneArrowUpRightIcon } from '@heroicons/react/24/solid';
 import logo from '../../assets/images/logo/car_logo.png'
+import '../../Pages/styles.css';
 
 
 
@@ -25,7 +26,7 @@ const Navbar = () => {
 
                 <div className="navbar-start">
                     {/* Mobile */}
-                    <div onClick={() => setOpen(!open)} className='lg:hidden'>
+                    <div onClick={() => setOpen(!open)} className='lg:hidden navBar'>
                         <label className="btn btn-circle bg-gre swap swap-rotate">
 
                             {
@@ -54,10 +55,30 @@ const Navbar = () => {
                     <ul className="menu menu-horizontal px-1 flex gap-5 text-xl text-white font-semibold">
                         {navItem}
                     </ul>
+
+
                 </div>
-                <div className="navbar-end gap-3 pr-3">
-                    <h2 className='text-white'>Call now</h2>
-                    <Link><a className=""><PhoneArrowUpRightIcon className="h-8 w-8 text-white bg-[#1C3F3A] " /> </a> </Link>
+                <div className='lg:hidden block'>
+                    <Link to='/'> <img className='w-[80px] h-[100px]' src={logo} alt="" /> </Link>
+                </div>
+                <div className="navbar-end  pr-3">
+                    <div className="dropdown dropdown-end">
+                        <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+                            <div className="w-10 rounded-full">
+                                <img className='w-[80px] h-[100px]' src={logo} alt="" />
+                            </div>
+                        </label>
+                        <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+                            <li>
+                                <a className="justify-between">
+                                    Profile
+
+                                </a>
+                            </li>
+                            <li><a>Settings</a></li>
+                            <li><a>Logout</a></li>
+                        </ul>
+                    </div>
 
                 </div>
             </div>
