@@ -3,6 +3,7 @@ import Main from "../Main/Main";
 import Error from "../ErrorPage/Error";
 import Home from "../Pages/Home/Home";
 import AllToys from "../Pages/AllToys";
+import LogIn from './../Pages/LogIN/LogIn';
 
 const router = createBrowserRouter([
     {
@@ -16,7 +17,11 @@ const router = createBrowserRouter([
             },
             {
                 path: '/toys',
-                element:<AllToys/>
+                element: <AllToys />
+            },
+            {
+                path: '/logIn',
+                element: <LogIn />
             }
         ]
     },
