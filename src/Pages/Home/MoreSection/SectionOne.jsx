@@ -43,7 +43,7 @@ const SectionOne = () => {
             <div className='my-28'>
                 <div className='my-16 '  >
                     <div className='text-center my-5 font-semibold text-2xl' >
-                        <h1 className='text-5xl font-semibold text-orange-500'>See some relative toys</h1>
+                        <h1 className='text-5xl font-semibold text-orange-500'>Shop by categories</h1>
 
                     </div>
 

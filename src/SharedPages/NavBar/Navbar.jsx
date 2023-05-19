@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { XMarkIcon, Bars4Icon, PhoneArrowUpRightIcon } from '@heroicons/react/24/solid';
+import { XMarkIcon, Bars4Icon } from '@heroicons/react/24/solid';
 import logo from '../../assets/images/logo/car_logo.png'
 import '../../Pages/styles.css';
 

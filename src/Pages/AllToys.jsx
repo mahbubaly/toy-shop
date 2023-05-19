@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import banner2 from '../assets/images/Banner/2.jpg'
-import AllToy from './allToy/AllToy';
+
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
+import AllToy from './AllToy/AllToy';
 AOS.init();
 
 const AllToys = () => {
@@ -22,7 +23,7 @@ const AllToys = () => {
     return (
         <>
 
-            <div id="slide1" className="carousel-item relative w-full my-9 " data-aos="fade-left " data-aos-duration="2000">
+            <div id="slide1" className="carousel-item relative w-full my-9 " data-aos="fade-left" data-aos-duration="2000">
                 <img src={banner2} className="w-full h-[300px]  rounded-xl" />
 
 
@@ -40,7 +41,7 @@ const AllToys = () => {
 
 
 
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 my-24 gap-6 ml-24'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 my-24 gap-6 md:ml-6 ml-11'>
                 {
                     allToys.map(toys => <AllToy
                         key={toys._id}
