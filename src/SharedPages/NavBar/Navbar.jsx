@@ -1,21 +1,45 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { XMarkIcon, Bars4Icon } from '@heroicons/react/24/solid';
 import logo from '../../assets/images/logo/car_logo.png'
 import '../../Pages/styles.css';
+import { AuthContext } from '../../Auths/AuthProvider';
 
 
 
 
 const Navbar = () => {
+    const { user, logOut } = useContext(AuthContext);
+
+    // const profileName = user.email;
+    const handlerLogout = () => {
+        logOut()
+            .then(result => { })
+            .catch(error => {
+                console.error(error.message);
+            })
+    }
     const navItem = <>
         <Link to='/'><li className='decoration-none'>Home</li></Link>
         <Link to='/toys'><li className='decoration-none'>All toys</li></Link>
         <Link to='/blogs'><li className='decoration-none'>Blog</li></Link>
         <Link to='/about'><li className='decoration-none'>About us</li></Link>
-        <Link to='/help'><li className='decoration-none'>help</li></Link>
-        <Link to='/logIn'><li className='decoration-none'>Log in</li></Link>
-        <Link to='/signUp'><li className='decoration-none'>Sign up</li></Link>
+
+        <div>
+            {user ?
+                <div className='flex gap-4'>
+                    <Link to='/myToys'><li className='decoration-none'>My toys</li></Link>
+                    <h1 onClick={handlerLogout}>Log out</h1>
+                </div> :
+                <div className='flex gap-4'>
+                    <Link to='/logIn'><li className='decoration-none'>Log in</li></Link>
+                    <Link to='/signUp'><li className='decoration-none'>Sign up</li></Link>
+                </div>
+
+
+            }
+        </div>
+
 
 
 
@@ -67,7 +91,12 @@ const Navbar = () => {
                     <div className="dropdown dropdown-end">
                         <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                             <div className="w-10 rounded-full">
-                                <img className='w-[80px] h-[100px]' src={logo} alt="" />
+
+                                {<abbr title={user && user.displayName}>
+                                    <img className='w-[80px] h-[100px]' src={user && user.photoURL} alt="" />
+                                </abbr>}
+                                
+
                             </div>
                         </label>
                         <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
@@ -78,7 +107,8 @@ const Navbar = () => {
                                 </a>
                             </li>
                             <li><a>Settings</a></li>
-                            <li><a>Logout</a></li>
+                            <h1 className='ml-3' onClick={handlerLogout}>Log out</h1>
+
                         </ul>
                     </div>
 

@@ -6,7 +6,12 @@ import Buses from '../Buses';
 import TrackTab from '../TrackTab';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+
+
 AOS.init();
+
+
+
 
 const SectionOne = () => {
     const [bikeInfo, setBikeInfo] = useState([]);
@@ -37,6 +42,7 @@ const SectionOne = () => {
     }, [])
     return (
         <>
+          
 
 
 
@@ -63,6 +69,8 @@ const SectionOne = () => {
                             <Tab><h1 className='text-xl font-bold hover:text-[#1C3F3A] '> Track Toys</h1> </Tab>
                             <Tab><h1 className='text-xl font-bold hover:text-[#1C3F3A] '>Buses </h1></Tab>
                         </TabList>
+
+
 
                         <TabPanel>
                             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
