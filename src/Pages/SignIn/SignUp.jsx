@@ -11,7 +11,7 @@ const SignUp = () => {
     const location = useLocation();
     console.log(location);
     const Navigate = useNavigate()
-    const from = location.state?.form?.pathname || '/home'
+    const from = location.state?.form?.pathname || '/'
 
     const handlerSignUp = event => {
         event.preventDefault();
@@ -20,10 +20,8 @@ const SignUp = () => {
         const email = form.email.value;
         const password = form.password.value;
         const confirm = form.confirm.value;
-        console.log(email, password)
+        
 
-
-        setError('');
         if (password !== confirm) {
             setError('Passwords do not match');
         }
@@ -37,7 +35,11 @@ const SignUp = () => {
                 console.log(user);
                 Navigate(from, { replace: true });
             })
-            .catch(error => console.log(error));
+            .catch(error => {
+                console.error(error.message);
+                setError("Already used this email address!!");
+
+            })
     }
     return (
         <>

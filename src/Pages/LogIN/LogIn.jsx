@@ -1,5 +1,5 @@
-import React, { useContext } from 'react';
-import { Link, useLocation, useNavigate } from 'react-router-dom';
+import React, { useContext, useState } from 'react';
+import { Link, Navigate, useLocation, useNavigate } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { AuthContext } from '../../Auths/AuthProvider';
@@ -8,9 +8,12 @@ import google from '../../assets/images/social/google-removebg-preview.png';
 import fb from '../../assets/images/social/Facebook-logo.png';
 
 const LogIn = () => {
+    const [error, setError] = useState('');
     const { signIn, googleSignIn } = useContext(AuthContext);
     const location = useLocation();
-    const navigate = useNavigate();
+    console.log(location);
+    const Navigate = useNavigate()
+    const from = location.state?.form?.pathname || '/'
 
     const handleLogin = event => {
         event.preventDefault();
@@ -19,27 +22,36 @@ const LogIn = () => {
         const password = form.password.value;
         console.log(email, password)
 
+        setError('');
         signIn(email, password)
             .then(result => {
                 const user = result.user;
                 console.log(user);
-                navigate(from, { replace: true })
+                form.reset();
+                Navigate(from, { replace: true });
 
 
 
             })
-            .catch(error => console.log(error));
+            .catch(error => {
+                console.error(error);
+                setError("Invalid password!!")
+            })
     }
 
 
     const googleHandler = () => {
         googleSignIn()
-        .then(result => {
-            const user = result.user;
-            console.log(user);
-           
-        })
-        .catch(error => console.log(error));
+            .then(result => {
+                const user = result.user;
+                console.log(user);
+                form.reset();
+
+            })
+            .catch(error => {
+                console.error(error);
+                setError("Invalid password!!")
+            })
 
 
 
@@ -91,6 +103,10 @@ const LogIn = () => {
                                     <h1>Facebook</h1>
 
                                 </div>
+
+                            </div>
+                            <div>
+                                <h1 className='text-center text-warning mt-3'>{error}</h1>
                             </div>
 
                             <p className='my-4 text-center'>Create new account? <Link className='text-orange-600 font-bold' to="/signUp">Sign Up</Link> </p>

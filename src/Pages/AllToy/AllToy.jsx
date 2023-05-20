@@ -1,11 +1,12 @@
 import React from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { Link } from 'react-router-dom';
 AOS.init();
 
 const AllToy = ({ toys }) => {
     console.log(toys);
-    const { image, carName, price, sellerName, availableQuantities } = toys;
+    const { image, carName, price, sellerName, availableQuantities,_id } = toys;
     return (
         <>
             <div data-aos="fade-left" className="card w-96 h-[500px] hover:shadow-2xl hover:duration-700 bg-base-100 shadow-xl p-5">
@@ -42,7 +43,7 @@ const AllToy = ({ toys }) => {
 
                     </div>
                 </div>
-                <button className='btn text-white bg-[#1C3F3A]'>View all details</button>
+                <Link to={`/${_id}`} > <button className='btn text-white bg-[#1C3F3A]'>View all details</button></Link>
             </div>
 
         </>

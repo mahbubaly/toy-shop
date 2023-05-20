@@ -6,10 +6,13 @@ import AllToys from "../Pages/AllToys";
 import LogIn from './../Pages/LogIN/LogIn';
 import SignUp from "../Pages/SignIn/SignUp";
 import Blogs from "../Pages/Blogs/Blogs";
+import About from "./About";
+import ViewDetails from './../Pages/Home/ViewDetails';
+
 
 const router = createBrowserRouter([
     {
-        path: "/",
+        path: '/',
         element: <Main />,
         errorElement: <Error />,
         children: [
@@ -32,7 +35,16 @@ const router = createBrowserRouter([
             },
             {
                 path: '/blogs',
-                element: <Blogs />
+                element: <Blogs ></Blogs>
+            },
+            {
+                path: '/about',
+                element: <About />
+            },
+            {
+                path: "/:id",
+                element: <ViewDetails />,
+                loader: ({ params }) => fetch(`https://toy-server-site-mahbubaly.vercel.app/allToys/${params.id}`)
             }
         ]
     },
