@@ -1,0 +1,7 @@
+--this project about toy shop
+--A person can get purchase any toy using this website 
+--Here i try to show car shop 
+-- and try to make attractive to show 
+--use mongodb firebase , in the backend
+-- frontend used tailwind daisy and so many other react components
+--Thank you 
