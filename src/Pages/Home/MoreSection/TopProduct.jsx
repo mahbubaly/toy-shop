@@ -29,7 +29,7 @@ const TopProduct = () => {
                 <div className="carousel w-full " >
                     <div id="item1" className="carousel-item w-full " >
                         <div className='grid grid-cols-1 lg:grid-cols-3' data-aos="fade-right" >
-                            <div className="card w-96 bg-base-100 shadow-xl m-5 ">
+                            <div className="card lg:w-96 w-80 bg-base-100 shadow-xl m-5 ">
                                 <figure className="px-10 pt-10">
                                     <img src={car1} alt="" />
                                 </figure>
@@ -41,7 +41,7 @@ const TopProduct = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="card w-96 bg-base-100 shadow-xl m-5 ">
+                            <div className="card lg:w-96 w-80 bg-base-100 shadow-xl m-5 ">
                                 <figure className="px-10 pt-10">
                                     <img src={car2} alt="" />
                                 </figure>
@@ -53,7 +53,7 @@ const TopProduct = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="card w-96 bg-base-100 shadow-xl m-5 ">
+                            <div className="card lg:w-96 w-80 bg-base-100 shadow-xl m-5 ">
                                 <figure className="px-10 pt-10">
                                     <img src={car3} alt="" />
                                 </figure>
@@ -71,7 +71,7 @@ const TopProduct = () => {
                     </div>
                     <div id="item2" className="carousel-item w-full">
                         <div className='grid grid-cols-1 lg:grid-cols-3' data-aos="fade-left" >
-                            <div className="card w-96 bg-base-100 shadow-xl m-5 ">
+                            <div className="card lg:w-96 w-80 bg-base-100 shadow-xl m-5 ">
                                 <figure className="px-10 pt-10">
                                     <img src={car4} alt="" />
                                 </figure>
@@ -83,7 +83,7 @@ const TopProduct = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="card w-96 bg-base-100 shadow-xl m-5 ">
+                            <div className="card lg:w-96 w-80 bg-base-100 shadow-xl m-5 ">
                                 <figure className="px-10 pt-10">
                                     <img src={car5} alt="" />
                                 </figure>
@@ -95,7 +95,7 @@ const TopProduct = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="card w-96 bg-base-100 shadow-xl m-5 ">
+                            <div className="card lg:w-96 w-80 bg-base-100 shadow-xl m-5 ">
                                 <figure className="px-10 pt-10">
                                     <img src={car6} alt="" />
                                 </figure>
@@ -113,7 +113,7 @@ const TopProduct = () => {
                     </div>
                     <div id="item3" className="carousel-item w-full">
                         <div className='grid grid-cols-1 lg:grid-cols-3' data-aos="fade-right">
-                            <div className="card w-96 bg-base-100 shadow-xl m-5 ">
+                            <div className="card lg:w-96 w-80 bg-base-100 shadow-xl m-5 ">
                                 <figure className="px-10 pt-10">
                                     <img src={car7} alt="" />
                                 </figure>
@@ -125,7 +125,7 @@ const TopProduct = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="card w-96 bg-base-100 shadow-xl m-5 ">
+                            <div className="card lg:w-96 w-80 bg-base-100 shadow-xl m-5 ">
                                 <figure className="px-10 pt-10">
                                     <img src={car8} alt="" />
                                 </figure>
@@ -137,7 +137,7 @@ const TopProduct = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="card w-96 bg-base-100 shadow-xl m-5 ">
+                            <div className="card lg:w-96 w-80 bg-base-100 shadow-xl m-5 ">
                                 <figure className="px-10 pt-10">
                                     <img src={car9} alt="" />
                                 </figure>
@@ -155,7 +155,7 @@ const TopProduct = () => {
                     </div>
                     <div id="item4" className="carousel-item w-full">
                         <div className='grid grid-cols-1 lg:grid-cols-3' data-aos="fade-left" >
-                            <div className="card w-96 bg-base-100 shadow-xl m-5 ">
+                            <div className="card lg:w-96 w-80 bg-base-100 shadow-xl m-5 ">
                                 <figure className="px-10 pt-10">
                                     <img src={car10} alt="" />
                                 </figure>
@@ -167,7 +167,7 @@ const TopProduct = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="card w-96 bg-base-100 shadow-xl m-5 ">
+                            <div className="card lg:w-96 w-80 bg-base-100 shadow-xl m-5 ">
                                 <figure className="px-10 pt-10">
                                     <img src={car11} alt="" />
                                 </figure>
@@ -179,7 +179,7 @@ const TopProduct = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="card w-96 bg-base-100 shadow-xl m-5 ">
+                            <div className="card lg:w-96 w-80 bg-base-100 shadow-xl m-5 ">
                                 <figure className="px-10 pt-10">
                                     <img src={car12} alt="" />
                                 </figure>

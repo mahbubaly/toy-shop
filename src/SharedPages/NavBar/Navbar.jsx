@@ -12,6 +12,7 @@ const Navbar = () => {
     const { user, logOut } = useContext(AuthContext);
 
     // const profileName = user.email;
+    
     const handlerLogout = () => {
         logOut()
             .then(result => { })
@@ -32,7 +33,7 @@ const Navbar = () => {
             {user ?
                 <div className='lg:flex gap-4'>
                     <Link to='/myAdd'><li className='decoration-none'>My toys</li></Link>
-                    <h1 className='ml-3 my-2' onClick={handlerLogout}>Log out</h1>
+                    <h1 className='ml-3 lg:my-0 my-2' onClick={handlerLogout}>Log out</h1>
                 </div> :
                 <div className='lg:flex gap-4'>
                     <Link to='/logIn'><li className='decoration-none'>Log in</li></Link>

@@ -8,7 +8,7 @@ const Bikes = ({ bikes }) => {
     const { name, price, description, image, brand } = bikes;
     return (
         <>
-            <div className="card w-96 bg-base-100 shadow-xl p-5 hover:shadow-2xl " data-aos="fade-left">
+            <div className="card lg:w-96 w-80 bg-base-100 shadow-xl p-5 hover:shadow-2xl " data-aos="fade-left">
                 <figure><img src={image} alt="" /></figure>
                 <div className="card-body">
                     <h2 className="card-title">

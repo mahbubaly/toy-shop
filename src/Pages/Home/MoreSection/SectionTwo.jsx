@@ -8,7 +8,7 @@ const SectionTwo = () => {
     return (
         <>
             <div className='my-9 text-center space-y-3 flex justify-center'>
-                <div className='lg:w-[600px] w-96'>
+                <div className='lg:w-[600px] w-80 text-center'>
                     <h1 className='lg:text-3xl font-semibold text-center'>we are provide our best product <br /> Meet we our experts!!  </h1>
                     <p className='my-3 '> A, pariatur quasi explicabo consectetur dolorem fuga deleniti minima voluptatem odit blanditiis, expedita doloribus officiis neque  beatae dicta quo numquam veritatis omnis cum. Nam iusto expedita ut similique corporin </p>
                 </div>
@@ -24,7 +24,7 @@ const SectionTwo = () => {
 
             </div>
 
-            <div className='grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 mx-auto ml-9  my-11'>
+            <div className='grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 mx-auto ml-4 gap-4 lg:ml-9  my-11'>
                 <div className="card lg:w-96 w-80  bg-base-100 shadow-xl">
                     <figure><img src={img1} /></figure>
                     <div className="card-body">
