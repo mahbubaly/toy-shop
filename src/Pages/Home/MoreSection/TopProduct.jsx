@@ -11,6 +11,9 @@ import car9 from '../../../assets/images/Top/9.jpg'
 import car10 from '../../../assets/images/Top/10.jpg'
 import car11 from '../../../assets/images/Top/123_.jpg'
 import car12 from '../../../assets/images/Top/12.jpg'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 
 
 const TopProduct = () => {
@@ -18,13 +21,13 @@ const TopProduct = () => {
         <>
 
             <div className='text-center my-10'>
-                <h1 className='text-3xl font-bold'>Top Products</h1>
+                <h1 className='text-3xl font-bold hover:underline text-orange-400'>Top Products</h1>
                 <h3 className='text-xl my-3'>Our top sellers and recommendations</h3>
             </div>
 
-            <div>
-                <div className="carousel w-full ">
-                    <div id="item1" className="carousel-item w-full">
+            <div data-aos="fade-right" >
+                <div className="carousel w-full " >
+                    <div id="item1" className="carousel-item w-full " >
                         <div className='grid grid-cols-1 lg:grid-cols-3' >
                             <div className="card w-96 bg-base-100 shadow-xl m-5 ">
                                 <figure className="px-10 pt-10">
