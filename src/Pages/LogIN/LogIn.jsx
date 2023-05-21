@@ -10,9 +10,11 @@ import fb from '../../assets/images/social/Facebook-logo.png';
 const LogIn = () => {
     const [error, setError] = useState('');
     const { signIn, googleSignIn } = useContext(AuthContext);
+    
     const location = useLocation();
     console.log(location);
-    const Navigate = useNavigate()
+    const Navigate = useNavigate();
+
     const from = location.state?.form?.pathname || '/'
 
     const handleLogin = event => {
@@ -46,11 +48,13 @@ const LogIn = () => {
                 const user = result.user;
                 console.log(user);
                 form.reset();
+                Navigate(from, { replace: true });
 
             })
             .catch(error => {
                 console.error(error);
                 setError("Invalid password!!")
+                setError('')
             })
 
 
@@ -93,12 +97,12 @@ const LogIn = () => {
                             <h1 className='mt-4 text-xl text-center'>Or sign with </h1>
                             <div className='flex gap-5'>
 
-                                <div onClick={googleHandler} className='flex gap-5 items-center justify-center border-2 p-1 rounded-xl hover:shadow-lg'>
+                                <div onClick={googleHandler} className='flex gap-2 items-center justify-center border-2 p-2 rounded-xl hover:shadow-lg'>
                                     <img className='w-[40px] h-[40px]' src={google} alt="" />
                                     <h1>Google</h1>
 
                                 </div>
-                                <div className='flex gap-5 items-center justify-center border-2 p-1 rounded-xl hover:shadow-lg'>
+                                <div className='flex gap-2 items-center justify-center border-2 p-2 rounded-xl hover:shadow-lg'>
                                     <img className='w-[50px] h-[40px]' src={fb} alt="" />
                                     <h1>Facebook</h1>
 

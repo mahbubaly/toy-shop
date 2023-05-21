@@ -32,7 +32,7 @@ const TopProduct = () => {
                                 </figure>
                                 <div className="card-body  ">
                                     <h2 className="card-title">Premium Cars Audi Q4 e-tron</h2>
-                                    <p>If a dog chews shoes whose shoes does he choose?</p>
+                                    <p>Price: $18.99</p>
                                     <div className="card-actions">
                                         <button className="btn text-white bg-[#1C3F3A]">Buy Now</button>
                                     </div>
@@ -44,7 +44,7 @@ const TopProduct = () => {
                                 </figure>
                                 <div className="card-body  ">
                                     <h2 className="card-title">Premium Cars Audi Q4 e-tron</h2>
-                                    <p>If a dog chews shoes whose shoes does he choose?</p>
+                                    <p>Price: $10.00</p>
                                     <div className="card-actions">
                                         <button className="btn text-white bg-[#1C3F3A]">Buy Now</button>
                                     </div>
@@ -56,7 +56,7 @@ const TopProduct = () => {
                                 </figure>
                                 <div className="card-body  ">
                                     <h2 className="card-title">Premium Cars Audi Q4 e-tron</h2>
-                                    <p>If a dog chews shoes whose shoes does he choose?</p>
+                                    <p>Price: $14.5</p>
                                     <div className="card-actions">
                                         <button className="btn text-white bg-[#1C3F3A]">Buy Now</button>
                                     </div>
@@ -74,7 +74,7 @@ const TopProduct = () => {
                                 </figure>
                                 <div className="card-body  ">
                                     <h2 className="card-title">Premium Cars Audi Q4 e-tron</h2>
-                                    <p>If a dog chews shoes whose shoes does he choose?</p>
+                                    <p>Price: $12.99</p>
                                     <div className="card-actions">
                                         <button className="btn text-white bg-[#1C3F3A]">Buy Now</button>
                                     </div>
@@ -86,7 +86,7 @@ const TopProduct = () => {
                                 </figure>
                                 <div className="card-body  ">
                                     <h2 className="card-title">Premium Cars Audi Q4 e-tron</h2>
-                                    <p>If a dog chews shoes whose shoes does he choose?</p>
+                                    <p>Price: $34.99</p>
                                     <div className="card-actions">
                                         <button className="btn text-white bg-[#1C3F3A]">Buy Now</button>
                                     </div>
@@ -98,7 +98,7 @@ const TopProduct = () => {
                                 </figure>
                                 <div className="card-body  ">
                                     <h2 className="card-title">Premium Cars Audi Q4 e-tron</h2>
-                                    <p>If a dog chews shoes whose shoes does he choose?</p>
+                                     <p>Price: $12.99</p>
                                     <div className="card-actions">
                                         <button className="btn text-white bg-[#1C3F3A]">Buy Now</button>
                                     </div>
@@ -116,7 +116,7 @@ const TopProduct = () => {
                                 </figure>
                                 <div className="card-body  ">
                                     <h2 className="card-title">Premium Cars Audi Q4 e-tron</h2>
-                                    <p>If a dog chews shoes whose shoes does he choose?</p>
+                                    <p>Price: $5.99</p>
                                     <div className="card-actions">
                                         <button className="btn text-white bg-[#1C3F3A]">Buy Now</button>
                                     </div>
@@ -128,7 +128,7 @@ const TopProduct = () => {
                                 </figure>
                                 <div className="card-body  ">
                                     <h2 className="card-title">Premium Cars Audi Q4 e-tron</h2>
-                                    <p>If a dog chews shoes whose shoes does he choose?</p>
+                                    <p>Price: $15.99</p>
                                     <div className="card-actions">
                                         <button className="btn text-white bg-[#1C3F3A]">Buy Now</button>
                                     </div>
@@ -140,7 +140,7 @@ const TopProduct = () => {
                                 </figure>
                                 <div className="card-body  ">
                                     <h2 className="card-title">Premium Cars Audi Q4 e-tron</h2>
-                                    <p>If a dog chews shoes whose shoes does he choose?</p>
+                                    <p>Price: $8.00</p>
                                     <div className="card-actions">
                                         <button className="btn text-white bg-[#1C3F3A]">Buy Now</button>
                                     </div>
@@ -158,7 +158,7 @@ const TopProduct = () => {
                                 </figure>
                                 <div className="card-body  ">
                                     <h2 className="card-title">Premium Cars Audi Q4 e-tron</h2>
-                                    <p>If a dog chews shoes whose shoes does he choose?</p>
+                                    <p>Price: $12.99</p>
                                     <div className="card-actions">
                                         <button className="btn text-white bg-[#1C3F3A]">Buy Now</button>
                                     </div>
@@ -170,7 +170,7 @@ const TopProduct = () => {
                                 </figure>
                                 <div className="card-body  ">
                                     <h2 className="card-title">Premium Cars Audi Q4 e-tron</h2>
-                                    <p>If a dog chews shoes whose shoes does he choose?</p>
+                                    <p>Price: $12.55</p>
                                     <div className="card-actions">
                                         <button className="btn text-white bg-[#1C3F3A]">Buy Now</button>
                                     </div>
@@ -182,7 +182,7 @@ const TopProduct = () => {
                                 </figure>
                                 <div className="card-body  ">
                                     <h2 className="card-title">Premium Cars Audi Q4 e-tron</h2>
-                                    <p>If a dog chews shoes whose shoes does he choose?</p>
+                                    <p>Price: $7.99</p>
                                     <div className="card-actions">
                                         <button className="btn text-white bg-[#1C3F3A]">Buy Now</button>
                                     </div>

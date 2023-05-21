@@ -1,12 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import { useLoaderData } from 'react-router-dom';
 import banner2 from '../assets/images/Banner/2.jpg'
-import { MapPinIcon } from '@heroicons/react/24/solid'
-
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import AllToy from './AllToy/AllToy';
 AOS.init();
+import AllToy from './AllToy/AllToy';
 
 const AllToys = () => {
     const [allToys, setAllToys] = useState([]);
@@ -17,6 +14,9 @@ const AllToys = () => {
         fetch('https://toy-server-site.vercel.app/alltoys')
             .then(res => res.json())
             .then(data => setAllToys(data))
+            .catch(err => {
+                console.log(err);
+            })
 
 
 
@@ -45,7 +45,7 @@ const AllToys = () => {
 
 
             <div className=' '>
-               
+
 
 
                 <div className=" form-control  my-3">

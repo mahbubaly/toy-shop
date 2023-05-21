@@ -22,13 +22,16 @@ const Navbar = () => {
     const navItem = <>
         <Link to='/'><li className='decoration-none'>Home</li></Link>
         <Link to='/toys'><li className='decoration-none'>All toys</li></Link>
+        <Link to='/addToy'><li className='decoration-none'>Add toy</li></Link>
         <Link to='/blogs'><li className='decoration-none'>Blog</li></Link>
         <Link to='/about'><li className='decoration-none'>About us</li></Link>
+        
+
 
         <div>
             {user ?
                 <div className='flex gap-4'>
-                    <Link to='/myToys'><li className='decoration-none'>My toys</li></Link>
+                    <Link to='/myAdd'><li className='decoration-none'>My toys</li></Link>
                     <h1 onClick={handlerLogout}>Log out</h1>
                 </div> :
                 <div className='flex gap-4'>

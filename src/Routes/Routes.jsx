@@ -8,6 +8,9 @@ import SignUp from "../Pages/SignIn/SignUp";
 import Blogs from "../Pages/Blogs/Blogs";
 import About from "./About";
 import ViewDetails from './../Pages/Home/ViewDetails';
+import AddSingleToy from "../Pages/AddSingleToy/AddSingleToy";
+import PrivateRoute from './../Pages/PrivateRoutes/PrivateRoute';
+import MyAdd from "../Pages/AddSingleToy/Myadd";
 
 
 const router = createBrowserRouter([
@@ -23,6 +26,11 @@ const router = createBrowserRouter([
             {
                 path: '/toys',
                 element: <AllToys />
+            },
+            {
+                path: '/addToy',
+                element: <PrivateRoute><AddSingleToy /></PrivateRoute>
+
             },
             {
                 path: '/logIn',
@@ -45,6 +53,10 @@ const router = createBrowserRouter([
                 path: "/:id",
                 element: <ViewDetails />,
                 loader: ({ params }) => fetch(`https://toy-server-site-mahbubaly.vercel.app/allToys/${params.id}`)
+            },
+            {
+                path: '/myAdd',
+                element: <MyAdd />
             }
         ]
     },
