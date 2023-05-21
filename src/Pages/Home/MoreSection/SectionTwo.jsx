@@ -23,7 +23,7 @@ const SectionTwo = () => {
 
             </div>
 
-            <div className='grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 mx-auto lg:ml-9 ml-0'>
+            <div className='grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 mx-auto lg:ml-9 ml-0 my-11'>
                 <div className="card w-96 bg-base-100 shadow-xl">
                     <figure><img src={img1} /></figure>
                     <div className="card-body">
