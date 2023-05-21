@@ -25,10 +25,10 @@ const TopProduct = () => {
                 <h3 className='text-xl my-3'>Our top sellers and recommendations</h3>
             </div>
 
-            <div data-aos="fade-right" >
+            <div  >
                 <div className="carousel w-full " >
                     <div id="item1" className="carousel-item w-full " >
-                        <div className='grid grid-cols-1 lg:grid-cols-3' >
+                        <div className='grid grid-cols-1 lg:grid-cols-3' data-aos="fade-right" >
                             <div className="card w-96 bg-base-100 shadow-xl m-5 ">
                                 <figure className="px-10 pt-10">
                                     <img src={car1} alt="" />
@@ -70,7 +70,7 @@ const TopProduct = () => {
                         </div>
                     </div>
                     <div id="item2" className="carousel-item w-full">
-                        <div className='grid grid-cols-1 lg:grid-cols-3' >
+                        <div className='grid grid-cols-1 lg:grid-cols-3' data-aos="fade-left" >
                             <div className="card w-96 bg-base-100 shadow-xl m-5 ">
                                 <figure className="px-10 pt-10">
                                     <img src={car4} alt="" />
@@ -112,7 +112,7 @@ const TopProduct = () => {
                         </div>
                     </div>
                     <div id="item3" className="carousel-item w-full">
-                        <div className='grid grid-cols-1 lg:grid-cols-3' >
+                        <div className='grid grid-cols-1 lg:grid-cols-3' data-aos="fade-right">
                             <div className="card w-96 bg-base-100 shadow-xl m-5 ">
                                 <figure className="px-10 pt-10">
                                     <img src={car7} alt="" />
@@ -154,7 +154,7 @@ const TopProduct = () => {
                         </div>
                     </div>
                     <div id="item4" className="carousel-item w-full">
-                        <div className='grid grid-cols-1 lg:grid-cols-3' >
+                        <div className='grid grid-cols-1 lg:grid-cols-3' data-aos="fade-left" >
                             <div className="card w-96 bg-base-100 shadow-xl m-5 ">
                                 <figure className="px-10 pt-10">
                                     <img src={car10} alt="" />
