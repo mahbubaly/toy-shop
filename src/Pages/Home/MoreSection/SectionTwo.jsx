@@ -27,31 +27,23 @@ const SectionTwo = () => {
                 <div className="card w-96 bg-base-100 shadow-xl">
                     <figure><img src={img1} /></figure>
                     <div className="card-body">
-                        <h2 className="card-title">Shoes!</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
-                        <div className="card-actions justify-end">
-                            <button className="btn btn-primary">Buy Now</button>
-                        </div>
+                        <h2 className="card-title">Tonny benboken</h2>
+                        <p>He had 25years experience about toy!! Achieve 10+ international award and 20+ national awards</p>
+                        
                     </div>
                 </div>
                 <div className="card w-96 bg-base-100 shadow-xl">
                     <figure><img src={img2} /></figure>
                     <div className="card-body">
-                        <h2 className="card-title">Shoes!</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
-                        <div className="card-actions justify-end">
-                            <button className="btn btn-primary">Buy Now</button>
-                        </div>
+                    <h2 className="card-title">USMAM UZKI</h2>
+                        <p>He had 25years experience about toy!! Achieve 10+ international award and 20+ national awards</p>
                     </div>
                 </div>
                 <div className="card w-96 bg-base-100 shadow-xl">
                     <figure><img src={img3} /></figure>
                     <div className="card-body">
-                        <h2 className="card-title">Shoes!</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
-                        <div className="card-actions justify-end">
-                            <button className="btn btn-primary">Buy Now</button>
-                        </div>
+                        <h2 className="card-title">Jaman kobir</h2>
+                        <p>He had 25years experience about toy!! Achieve 10+ international award and 20+ national awards</p>
                     </div>
                 </div>
             </div>
