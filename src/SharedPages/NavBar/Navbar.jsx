@@ -30,11 +30,11 @@ const Navbar = () => {
 
         <div>
             {user ?
-                <div className='flex gap-4'>
+                <div className='lg:flex gap-4'>
                     <Link to='/myAdd'><li className='decoration-none'>My toys</li></Link>
-                    <h1 onClick={handlerLogout}>Log out</h1>
+                    <h1 className='ml-3 my-2' onClick={handlerLogout}>Log out</h1>
                 </div> :
-                <div className='flex gap-4'>
+                <div className='lg:flex gap-4'>
                     <Link to='/logIn'><li className='decoration-none'>Log in</li></Link>
                     <Link to='/signUp'><li className='decoration-none'>Sign up</li></Link>
                 </div>
@@ -56,16 +56,16 @@ const Navbar = () => {
                 <div className="navbar-start">
                     {/* Mobile */}
                     <div onClick={() => setOpen(!open)} className='lg:hidden navBar'>
-                        <label className="btn btn-circle bg-gre swap swap-rotate">
+                        <label className="btn btn-circle  bg-[#1C3F3A] swap swap-rotate">
 
                             {
-                                open === true ? <XMarkIcon className="h-8 w-8 text-primary " /> : <Bars4Icon className="h-8 w-8 text-primary " />
+                                open === true ? <XMarkIcon className="h-8 w-8 text-white " /> : <Bars4Icon className="h-8 w-8 text-white   " />
                             }
 
 
                         </label>
 
-                        <div className={`${open ? 'bg-gray-900   text-primary p-6 w-44 pl-3 ' : '-top-96 -left-9'} absolute flex flex-col duration-1000 gap-3 text-white `}>
+                        <div className={`${open ? 'bg-[#1C3F3A]  text-primary p-6 w-44 pl-3 ' : '-top-96 -left-9'} absolute flex flex-col duration-1000 gap-3 text-white `}>
 
 
                             {navItem}

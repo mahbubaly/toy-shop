@@ -42,23 +42,25 @@ const SectionOne = () => {
     }, [])
     return (
         <>
-          
 
 
 
-            <div className='my-28'>
-                <div className='my-16 '  >
-                    <div className='text-center my-5 font-semibold text-2xl' >
-                        <h1 className='text-5xl font-semibold text-orange-500'>Shop by categories</h1>
 
-                    </div>
+            <div className='lg:my-28 my-10'>
+                <div className='flex justify-center'>
+                    <div className='my-16 lg:w-[600px] w-96'  >
+                        <div className='text-center my-5 font-semibold text-2xl' >
+                            <h1 className='lg:text-5xl text-3xl font-semibold text-orange-500'>Shop by categories</h1>
 
-                    <div className='text-black text-center font-semibold'>
+                        </div>
 
-                        <p className='my-3'>"Discover the joy of endless adventures with our collection of car toys, igniting your imagination and <br /> fueling your desire to experience the real thrill of owning a magnificent car!"</p>
+                        <div className='text-black text-center font-semibold'>
+
+                            <p className='my-3'>"Discover the joy of endless adventures with our collection of car toys, igniting your imagination and <br /> fueling your desire to experience the real thrill of owning a magnificent car!"</p>
 
 
 
+                        </div>
                     </div>
                 </div>
 
